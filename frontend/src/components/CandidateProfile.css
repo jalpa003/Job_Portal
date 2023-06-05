@@ -1,0 +1,45 @@
+.profile-container {
+    max-width: 600px;
+    margin: 110px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: backgroundAnimation 10s infinite;
+  }
+  
+  .profile-form {
+    width: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .profile-form label {
+    width: 45%;
+  }
+  
+  .profile-form input,
+  .profile-form textarea,
+  .profile-form select {
+    width: 50%;
+  }
+  
+  .profile-form button {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 900px) {
+    .profile-form {
+      width: 100%;
+    }
+  
+    .profile-form label,
+    .profile-form input,
+    .profile-form textarea,
+    .profile-form select {
+      width: 100%;
+    }
+  }
+  

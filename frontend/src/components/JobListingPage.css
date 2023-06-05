@@ -1,0 +1,98 @@
+.job-listings {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 1200px;
+    padding: 0 16px;
+}
+
+.job-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 8px;
+    width: calc(40.33% - 32px);
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Added to evenly distribute content vertically */
+}
+
+.job-card:hover {
+    background-color: #f0f0f0;
+}
+
+.job-card h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 1.2rem;
+}
+
+.job-details {
+    margin-bottom: 8px;
+    /* Adjusted margin for better spacing */
+}
+
+.job-field {
+    margin-bottom: 8px;
+}
+
+.job-field label {
+    font-weight: bold;
+    display: block;
+}
+
+.job-field p {
+    margin: 0;
+}
+
+.apply-button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .job-card {
+        flex: 0 0 calc(50% - 32px);
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right span {
+    margin-right: 16px;
+}

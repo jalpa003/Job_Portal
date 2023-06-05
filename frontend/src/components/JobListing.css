@@ -1,0 +1,92 @@
+.job-listing-page {
+    margin: 20px;
+}
+
+.total-jobs {
+    font-weight: bold;
+}
+
+.job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.job-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.job-title {
+    margin-top: 0;
+}
+
+.job-details {
+    margin-bottom: 10px;
+}
+
+.job-field {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.job-field-label {
+    font-weight: bold;
+}
+
+.job-field-value {
+    margin-left: 5px;
+}
+
+.job-description {
+    margin-top: 0;
+}
+
+.logout-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+
+.back-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #f2f2f2; */
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+
+.navbar-company {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #000000;
+    text-transform: uppercase;
+}

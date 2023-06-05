@@ -1,0 +1,92 @@
+.registration-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.registration-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type='text'],
+input[type='email'],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333;
+}
+
+button[type='submit'] {
+    background-color: #4285f4;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button[type='submit']:hover {
+    background-color: #0d47a1;
+}
+
+/* React Toastify Styles */
+
+/* .Toastify__toast-container {
+    width: 300px;
+} */
+
+/* .Toastify__toast--success {
+    background-color: #43a047;
+    color: #fff;
+}
+
+.Toastify__toast--error {
+    background-color: #d32f2f;
+    color: #fff;
+} */
+
+.profile-image {
+    width: 200px;
+    /* Adjust the width as needed */
+    height: auto;
+    margin-right: 20px;
+}

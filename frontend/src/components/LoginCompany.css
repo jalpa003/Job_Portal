@@ -1,0 +1,89 @@
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 92vh;
+    }
+
+    .heading {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 16px;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        padding: 16px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
+    }
+
+    .card-image {
+        width: 200px;
+        height: auto;
+        margin-bottom: 16px;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .label {
+        margin-bottom: 8px;
+    }
+
+    .input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 8px;
+    }
+
+    .input[type="email"],
+    .input[type="password"] {
+        width: 100%;
+    }
+
+    .button {
+        padding: 8px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    .text {
+        text-align: center;
+        margin-top: 16px;
+    }
+
+    .link {
+        background: none;
+        border: none;
+        color: #007bff;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+    .link:hover {
+        color: #0056b3;
+    }
+
+    html,
+    body {
+        height: 100%;
+        /* background-color: #7ea3da; */
+        margin: 0;
+        padding: 0;
+    }
