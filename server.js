@@ -11,6 +11,10 @@ const authRoutes = require('./routes/authRoutes');
 const candidateRoutes = require('./routes/candidateRoutes');
 const companyRoutes = require('./routes/companyRoutes');
 
+const corsOptions = {
+    origin: "https://job-portal-frontend-6fgu.onrender.com", // frontend URI (ReactJS)
+}
+
 // Increase the maximum payload size limit to 10MB
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
@@ -19,7 +23,7 @@ app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Enable CORS
-app.use(cors());
+app.use(cors(corsOptions));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
