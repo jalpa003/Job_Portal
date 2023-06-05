@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://job-portal-s02g.onrender.com"
+  "proxy": "https://job-portal-s02g.onrender.com::3000"
 }
