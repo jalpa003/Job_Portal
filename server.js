@@ -12,7 +12,7 @@ const candidateRoutes = require('./routes/candidateRoutes');
 const companyRoutes = require('./routes/companyRoutes');
 
 const corsOptions = {
-    origin: "https://job-portal-frontend-6fgu.onrender.com", // frontend URI (ReactJS)
+    origin: "https://job-portal-frontend-t8ud.onrender.com", // frontend URI (ReactJS)
 }
 
 // Increase the maximum payload size limit to 10MB
