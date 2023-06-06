@@ -16,7 +16,7 @@ const LoginCompany = () => {
 
     // Send login request to the server
     try {
-      const response = await fetch('/auth/companies/login', {
+      const response = await fetch('https://job-portal-s02g.onrender.com/auth/companies/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -29,7 +29,7 @@ const LoginCompany = () => {
         const data = await response.json();
         login(data.token); // Login the user and save the token
 
-        const registrationResponse = await fetch('/companies/check-registration', {
+        const registrationResponse = await fetch('https://job-portal-s02g.onrender.com/companies/check-registration', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
