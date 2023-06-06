@@ -10,7 +10,7 @@ const JobListingPage = () => {
             try {
                 const token = localStorage.getItem('token');
 
-                const response = await fetch('/candidates/joblistings', {
+                const response = await fetch('https://job-portal-s02g.onrender.com/candidates/joblistings', {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                     },
@@ -44,7 +44,7 @@ const JobListingPage = () => {
             const payload = JSON.parse(atob(payloadBase64));
             const candidateId = payload.userId;
 
-            const response = await fetch(`/candidates/apply/${jobId}`, {
+            const response = await fetch(`https://job-portal-s02g.onrender.com/candidates/apply/${jobId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
