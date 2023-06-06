@@ -49,7 +49,7 @@ const CandidateRegistration = () => {
                     });
                 } else if (response.status === 404) {
                     // Candidate profile not found
-                    // toast.warn('Please fill up your candidate profile.');
+                    toast.warn('Please fill up your candidate profile.');
                 } else {
                     const errorData = await response.json();
                     throw new Error(errorData.error);
