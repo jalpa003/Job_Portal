@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-// import './CandidateRegister.css';
+import './CandidateRegister.css';
 import { useNavigate } from 'react-router-dom';
 
 const CandidateRegistration = () => {
@@ -152,7 +152,6 @@ const CandidateRegistration = () => {
     return (
         <div className="registration-container">
             <h2 className="registration-title">Candidate Registration</h2>
-//             <img src="/profile.jpg" alt="Profile" className="profile-image" />
             <form onSubmit={handleSubmit} className="registration-form">
                 <div className="form-group">
                     <label>First Name:</label>
