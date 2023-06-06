@@ -16,7 +16,7 @@ const LoginCandidate = () => {
 
         // Send login request to the server
         try {
-            const response = await fetch('/auth/candidates/login', {
+            const response = await fetch('https://job-portal-s02g.onrender.com/auth/candidates/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
