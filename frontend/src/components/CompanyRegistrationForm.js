@@ -30,7 +30,7 @@ const CompanyRegistrationForm = () => {
       newCompany.user = userId; // Assign the user ID to the 'user' field
 
       // Send the company registration request to the server
-      const response = await fetch('/companies/register', {
+      const response = await fetch('https://job-portal-s02g.onrender.com/companies/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
