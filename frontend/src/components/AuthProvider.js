@@ -31,7 +31,7 @@ const AuthProvider = ({ children }) => {
         } else if (role === 'company') {
             navigate('/company/dashboard');
         } else {
-            navigate('/');
+            navigate('/company/login');
         }
     };
 
