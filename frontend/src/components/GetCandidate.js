@@ -25,7 +25,7 @@ const CandidateProfile = () => {
       try {
         const token = localStorage.getItem('token');
 
-        const response = await fetch('/candidates/profile', {
+        const response = await fetch('https://job-portal-s02g.onrender.com/candidates/profile', {
           method: 'GET',
           headers: {
             Authorization: `Bearer ${token}`,
@@ -82,7 +82,7 @@ const CandidateProfile = () => {
       formData.append('resume', profileData.resume);
 
 
-      const response = await fetch('/candidates/profile', {
+      const response = await fetch('https://job-portal-s02g.onrender.com/candidates/profile', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
