@@ -24,7 +24,7 @@ const CandidateRegistration = () => {
             try {
                 const token = localStorage.getItem('token');
 
-                const response = await fetch('/candidates/profile', {
+                const response = await fetch('https://job-portal-s02g.onrender.com/candidates/profile', {
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -101,7 +101,7 @@ const CandidateRegistration = () => {
                 body: form,
             };
 
-            const response = await fetch('/candidates/profile', config);
+            const response = await fetch('https://job-portal-s02g.onrender.com/candidates/profile', config);
 
             if (!response.ok) {
                 const errorData = await response.json();
@@ -152,7 +152,7 @@ const CandidateRegistration = () => {
     return (
         <div className="registration-container">
             <h2 className="registration-title">Candidate Registration</h2>
-            <img src="/profile.jpg" alt="Profile" className="profile-image" />
+//             <img src="/profile.jpg" alt="Profile" className="profile-image" />
             <form onSubmit={handleSubmit} className="registration-form">
                 <div className="form-group">
                     <label>First Name:</label>
