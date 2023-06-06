@@ -67,7 +67,7 @@ const JobPostingForm = () => {
       const token = localStorage.getItem('token');
 
       // Send the job posting request to the server
-      const response = await fetch(`/companies/jobPost/${companyId}`, {
+      const response = await fetch(`https://job-portal-s02g.onrender.com/companies/jobPost/${companyId}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -104,7 +104,7 @@ const JobPostingForm = () => {
       const token = localStorage.getItem('token');
 
       // Fetch the company details based on the user ID
-      const companyResponse = await fetch(`/companies/users/${userId}/company`, {
+      const companyResponse = await fetch(`https://job-portal-s02g.onrender.com/companies/users/${userId}/company`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
