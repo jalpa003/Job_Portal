@@ -29,7 +29,7 @@ const LoginCandidate = () => {
                 login(data.token);
 
                 // Check if the user ID exists in the candidate database
-                const candidateResponse = await fetch(`/candidates/profile`, {
+                const candidateResponse = await fetch(`https://job-portal-s02g.onrender.com/candidates/profile`, {
                     method: 'GET',
                     headers: {
                         Authorization: `Bearer ${data.token}`,
