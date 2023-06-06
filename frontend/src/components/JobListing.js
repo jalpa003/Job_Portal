@@ -36,7 +36,7 @@ const JobListingPage = () => {
       const companyId = localStorage.getItem('companyId');
 
       // Fetch the total number of job postings by the company
-      const totalJobsResponse = await fetch(`/companies/${companyId}/totalJobPostings`, {
+      const totalJobsResponse = await fetch(`https://job-portal-s02g.onrender.com/companies/${companyId}/totalJobPostings`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -52,7 +52,7 @@ const JobListingPage = () => {
       }
 
       // Fetch the list of all jobs posted by the company
-      const jobsResponse = await fetch(`/companies/${companyId}/jobPostings`, {
+      const jobsResponse = await fetch(`https://job-portal-s02g.onrender.com/companies/${companyId}/jobPostings`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ const JobListingPage = () => {
       const token = localStorage.getItem('token');
 
       // Fetch the company details based on the user ID
-      const companyResponse = await fetch(`/companies/users/${userId}/company`, {
+      const companyResponse = await fetch(`https://job-portal-s02g.onrender.com/companies/users/${userId}/company`, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
