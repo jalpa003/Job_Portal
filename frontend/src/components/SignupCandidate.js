@@ -29,7 +29,7 @@ const SignupCandidate = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/auth/candidates/signup', {
+      const response = await fetch('https://job-portal-s02g.onrender.com/auth/candidates/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
